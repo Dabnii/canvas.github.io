@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme maker 0.1</title>
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+    <div class="field">
+        <div class="logo">
+            <img src="NewInk.png" height="100" alt="NewInk Logo!" class="logo">
+        </div>
+
+        <div class="contents">
+            <div class="tools"> 
+                <h2>Tools 🖌</h2>
+                <!-- <button class="tools-btn" id="circle">
+                    <img src="./icon.circle.png" height="50px" alt="circle icon" class="icons">
+                    <h3>Draw Circle</h3>
+                </button>
+                <button class="tools-btn" id="sqaure">
+                    <img src="./icon.sq.png" height="50px" alt="Square icon">
+                    <h3>Draw Square</h3>
+                </button> -->
+                <button class="tools-btn" id="mode-btn">
+                    <img src="./paint.icon.png" height="50px" alt="Square icon">
+                    <h3>Paint tool</h3>
+                </button>
+                <button class="tools-btn" id="eraser-btn">
+                    <img src="./eraser.icon.png" height="50px" alt="eraser icon">
+                    <h3>Eraser</h3>
+                </button>
+                <label class="tools-btn" ror="file">
+                    <img src="./img.icon.png" height="50px" alt="Square icon">
+                    <h3>Add image</h3>
+                  <input type="file" accept="image/*" id="file" /> 
+            </div>
+            <canvas></canvas>
+            <div class="adjs">      
+                <div class="color-options">
+                        <h1>Colors🎨</h1>
+                        <h3>Pick your favorite color! 
+                            <img src="./spoid.icon.png" height="30px" alt="soid icon">
+                        </h3>
+                    <div class="color-box">
+                        <input type="color" id="color"/>
+                        <div class="picker-set">
+                        <div
+                        class="color-option"
+                        style="background-color: #F285A2"
+                        data-color="#F285A2"
+                        ></div>
+                        <div
+                        class="color-option"
+                        style="background-color: #5E66F2"
+                        data-color="#5E66F2"
+                        ></div>
+                        <div
+                        class="color-option"
+                        style="background-color: #0424D9"
+                        data-color="#0424D9"
+                        ></div>
+                        <div
+                        class="color-option"
+                        style="background-color: #ffd231"
+                        data-color="#ffd231"
+                        ></div>
+                        <div
+                        class="color-option"
+                        style="background-color: #ff6a00"
+                        data-color="#ff6a00"
+                        ></div>
+                        <div
+                        class="color-option"
+                        style="background-color: #00cea5"
+                        data-color="#1abc9c"
+                        ></div>
+                        <div
+                        class="color-option"
+                        style="background-color: #29dfff"
+                        data-color="#29dfff"
+                        ></div>
+                        <div
+                        class="color-option"
+                        style="background-color: #F2EFEB"
+                        data-color="#F2EFEB"
+                        ></div>
+                        <div
+                        class="color-option"
+                        style="background-color: #262626"
+                        data-color="#262626"
+                        ></div>
+                        <div
+                        class="color-option"
+                        style="background-color: #0D0D0D"
+                        data-color="#0D0D0D"
+                        ></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pencil-range">
+                    <div id="pencil-ctx">
+                        <h1>Pencile range ✏️</h1>
+                        <input id="line-width" type="range" min="1" max="30" value="15" step="0.1" />
+                    </div> 
+                </div>
+                <div class="text-ops">
+                    <h1>Add fonts ⌨️</h1>
+                    <h3>Choose font style</h3>
+                    <select name="font" id="font-type-selector">
+                      <option value="">Font type</option>
+                        <option value='Roboto'>Roboto</option>
+                        <option value='Black Han Sans'>Black Han Sans</option>
+                        <option value='Nanum Myeongjo'>Nanum Myeongjo</option>
+                    </select>
+                    <select name="font" id="font-weight-selector">
+                      <option value="">Font weigth</option>
+                        <option value="light-weight">light</option>
+                        <option value="regular-weight">Regular</option>
+                        <option value="bold-weight">bold</option>
+                    </select>
+                    <span>  
+                        <h3>font size</h3>
+                    </span>
+                    <input id="font-size" type="range" min="1" max="10" value="5" step="0.1" />  
+                    <div class="text-box">
+                        <input type="text" placeholder= "텍스트를 입력하세요 :)"id="text" />
+                    </div>
+                </div>   
+            </div> 
+    </div>
+    <div class="btns">
+        <span id="bottom-btns">
+            <button onclick="clearCanvas()">
+                <img src="./new.icon.png" height="50px" alt="new canvas icon">
+                <h3>Clear canvas</h3></button>
+            <!-- <button id="destroy-btn">Clear</button> -->
+            <button id="save">
+                <img src="./save.icon.png" height="50px"  alt="save icon">
+                <h3>Save image</h3>
+            </button>
+            </button>
+        </span>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>

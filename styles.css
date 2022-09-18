@@ -1,0 +1,171 @@
+
+        body{
+            background-color: #cccedb;
+        }
+
+        .logo{
+            text-align: center;
+            justify-content: center;
+            flex: center;
+            width: auto;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .contents{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 0.8rem;
+        }
+
+        .tools{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;   
+            border-radius: 10px;
+            background-color: white;
+            width: 200px;
+            height: 800px;
+        }
+
+        canvas{
+            border-radius: 10px;
+            background-color: white;
+            height: 800px;
+            width: 800px;
+        }
+
+        .adjs{
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+
+        .color-options{
+            background-color: white;
+            width: 300px;
+            height: 370px;
+            border-radius: 10px;
+            /* margin-bottom: 0.4rem; */
+        }
+
+        .pencil-range{
+            background-color: white;
+            width: auto;
+            height: 120px;
+            border-radius: 10px;
+            /* margin-bottom: 0.4rem; */
+        }
+
+        .text-ops{
+            background-color: white;
+            width: 300px;
+            height: 310px;
+            border-radius: 10px;            
+        }
+
+
+
+
+        .btns{
+            text-align: center;
+            height: 100px;
+            width: auto;
+            margin: 10px;
+            padding: 10px;
+            gap: 10px;
+
+
+        }
+
+        /* .color-options{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+        }  */
+
+        .color-option {
+            display:inline-block;
+            width: 30px;
+            height:30px;
+            border-radius: 20px;
+            cursor:pointer;
+            border: 5px solid white;
+            transition: transform ease-in-out .1s;
+        }
+
+
+        .color-option:hover{
+            transform: scale(1.2);
+        }
+
+        input#color{
+            background-color: white;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 200px;
+            height: 50px;
+            border: none;
+            cursor: pointer;
+            margin-top: 1px;
+
+        }
+
+        #color::-webkit-color-swatch {
+            border-radius: 10px;
+            border:7px solid rgb(255, 255, 255);
+        }
+
+        #color::-moz-color-swatch {
+            border-radius: 10px;       
+        }
+
+        button, 
+        label{
+            all: unset;
+            padding: 5px 30px;
+            text-align: center;
+            background-color: royalblue;
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: opacity linear .1s;
+        }
+
+    
+        .tools-btn{
+            margin: 10px;
+            flex: content;
+            height: 100px;
+            align-items: center;
+        }
+
+        button:hover{
+            opacity: 0.85;
+        }
+
+        input#file{
+            display: none;
+        }
+
+        input#text{
+            all: unset;
+            width: 260px;
+            padding: 10px 0px;
+            text-align: center;
+            border-radius: 10px;
+            font-weight: 500;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+
+        #color{
+            margin: 30px;
+        }
